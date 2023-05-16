@@ -1,0 +1,9 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 16 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\bin\Release\netcoreapp3.1\553d24c6-f064-4d28-92cb-f7ab4851c8c1
+// command took 3.16s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\bin\Release\netcoreapp3.1\553d24c6-f064-4d28-92cb-f7ab4851c8c1
+// command took 3.83s and exited with 1
+// start dotnet  build -c Release --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\bin\Release\netcoreapp3.1\553d24c6-f064-4d28-92cb-f7ab4851c8c1
