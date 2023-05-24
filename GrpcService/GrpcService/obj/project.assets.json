@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcService\\GrpcService\\GrpcService.csproj",
+      "projectUniqueName": "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcService\\GrpcService\\GrpcService.csproj",
       "projectName": "GrpcService",
-      "projectPath": "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcService\\GrpcService\\GrpcService.csproj",
+      "projectPath": "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcService\\GrpcService\\GrpcService.csproj",
       "packagesPath": "C:\\Users\\Arham\\.nuget\\packages\\",
-      "outputPath": "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcService\\GrpcService\\obj\\",
+      "outputPath": "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcService\\GrpcService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Arham\\AppData\\Roaming\\NuGet\\NuGet.Config",

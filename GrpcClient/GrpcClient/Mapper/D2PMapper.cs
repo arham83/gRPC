@@ -1,4 +1,4 @@
-﻿using gRPC.Client.SerializerDeserializer;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     using gRPC.Client.SerializerDeserializer;
 using GrpcClient.DTOs;
 using GrpcService;
 using System;
@@ -32,13 +32,42 @@ namespace GrpcClient.Mapper
             // Mapping Rows
             foreach (var row in DTO_FM.Rows)
             {
-                var newRow = new Row2();
+                var newRow = new Row3();
                 //var nonNullValues = row.Where(v => v != null);
                 // Replacing null Values with the Empty String 
-                 List<string> modifiedList = row.Select(item => item ?? string.Empty).ToList();
+                 List<object> modifiedList = row.Select(item => item ?? string.Empty).ToList();
                 foreach (var value in modifiedList)
-                {                    
-                    newRow.Values.Add(value);
+                {
+                    Value3 newValue = new Value3();
+                    //Console.WriteLine("Value " + value.GetType() + " " + value);
+                    // Check the type of the value object and assign it to the appropriate field in Value3
+                    if (value is bool boolValue)
+                    {
+                        newValue.A = boolValue;
+                    }
+                    else if (value is int intValue)
+                    {
+                        newValue.B = intValue;
+                    }
+                    else if (value is long longValue)
+                    {
+                        newValue.C = longValue;
+                    }
+                    else if (value is string stringValue)
+                    {
+                        newValue.D = stringValue;
+                    }
+                    else if (value is double doubleValue)
+                    {
+                        newValue.E = doubleValue;
+                    }
+                    else
+                    {
+                        // Unsupported typ
+                        continue; // Skip this value and move to the next iteration
+                    }
+
+                    newRow.Values.Add(newValue);
                 }
                 FM.Rows.Add(newRow);
             }
@@ -67,3 +96,4 @@ namespace GrpcClient.Mapper
         }
     }
 }
+                                                                                                                                     

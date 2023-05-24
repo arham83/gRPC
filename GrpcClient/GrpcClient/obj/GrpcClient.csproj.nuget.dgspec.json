@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcClient\\GrpcClient\\GrpcClient.csproj": {}
+    "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcClient\\GrpcClient\\GrpcClient.csproj": {}
   },
   "projects": {
-    "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcClient\\GrpcClient\\GrpcClient.csproj": {
+    "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcClient\\GrpcClient\\GrpcClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcClient\\GrpcClient\\GrpcClient.csproj",
+        "projectUniqueName": "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcClient\\GrpcClient\\GrpcClient.csproj",
         "projectName": "GrpcClient",
-        "projectPath": "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcClient\\GrpcClient\\GrpcClient.csproj",
+        "projectPath": "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcClient\\GrpcClient\\GrpcClient.csproj",
         "packagesPath": "C:\\Users\\Arham\\.nuget\\packages\\",
-        "outputPath": "D:\\LayerOne\\Project - gRPC\\Project -V2\\GrpcClient\\GrpcClient\\obj\\",
+        "outputPath": "D:\\LayerOne\\Project - gRPC\\Project-V2-Working\\GrpcClient\\GrpcClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Arham\\AppData\\Roaming\\NuGet\\NuGet.Config",

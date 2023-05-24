@@ -15,7 +15,7 @@ namespace GrpcService.Services
             _logger = logger;
         }
 
-        public override Task<ServerReply> GetFullMessage(ClientRequest request, ServerCallContext context)
+        public override Task<ServerReply> GetFullMessage(FullMessage request, ServerCallContext context)
         {
             ServerReply response = new ServerReply();
 
@@ -25,7 +25,7 @@ namespace GrpcService.Services
             });
         }
 
-        public override Task<ServerReply> GetOptimizedMessage(ClientRequest request, ServerCallContext context)
+        public override Task<ServerReply> GetOptimizedMessage(OptimizedMessage request, ServerCallContext context)
         {
             ServerReply response = new ServerReply();
 

@@ -28,30 +28,31 @@ namespace GrpcService {
             "b2J1Zi93cmFwcGVycy5wcm90bxoZZ29vZ2xlL3Byb3RvYnVmL2FueS5wcm90",
             "byJYCgtGdWxsTWVzc2FnZRIsCgZoZWFkZXIYASADKAsyHC5NZXNzYWdlLlN0",
             "cnVjdHVyZURlZmluaXRpb24SGwoEcm93cxgCIAMoCzINLk1lc3NhZ2UuUm93",
-            "MiJOChBPcHRpbWl6ZWRNZXNzYWdlEiwKBmhlYWRlchgBIAMoCzIcLk1lc3Nh",
-            "Z2UuU3RydWN0dXJlRGVmaW5pdGlvbhIMCgRyb3dzGAIgASgJIhYKBFJvdzIS",
-            "DgoGVmFsdWVzGAEgAygJIqACChNTdHJ1Y3R1cmVEZWZpbml0aW9uEioKBG5h",
-            "bWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSKQoEdHlw",
-            "ZRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlEg8KB2lzX2xp",
-            "c3QYAyABKAgSEwoLaXNfbnVsbGFibGUYBCABKAgSLAoGZm9ybWF0GAUgASgL",
-            "MhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjAKC2FnZ3JlZ2F0aW9u",
-            "GAYgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkludDMyVmFsdWUSLAoGbGFiZWxz",
-            "GAcgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIhwKC1NlcnZl",
-            "clJlcGx5Eg0KBXJlcGx5GAEgASgJIiAKDUNsaWVudFJlcXVlc3QSDwoHbWVz",
-            "c2FnZRgBIAEoDDKQAQoJTWVzc2FnaW5nEj4KDkdldEZ1bGxNZXNzYWdlEhYu",
-            "TWVzc2FnZS5DbGllbnRSZXF1ZXN0GhQuTWVzc2FnZS5TZXJ2ZXJSZXBseRJD",
-            "ChNHZXRPcHRpbWl6ZWRNZXNzYWdlEhYuTWVzc2FnZS5DbGllbnRSZXF1ZXN0",
-            "GhQuTWVzc2FnZS5TZXJ2ZXJSZXBseUIOqgILR3JwY1NlcnZpY2ViBnByb3Rv",
-            "Mw=="));
+            "MyJOChBPcHRpbWl6ZWRNZXNzYWdlEiwKBmhlYWRlchgBIAMoCzIcLk1lc3Nh",
+            "Z2UuU3RydWN0dXJlRGVmaW5pdGlvbhIMCgRyb3dzGAIgASgJIicKBFJvdzMS",
+            "HwoGVmFsdWVzGAEgAygLMg8uTWVzc2FnZS5WYWx1ZTMiUQoGVmFsdWUzEgsK",
+            "AWEYASABKAhIABILCgFiGAIgASgFSAASCwoBYxgDIAEoA0gAEgsKAWQYBCAB",
+            "KAlIABILCgFlGAUgASgBSABCBgoEaXRlbSKgAgoTU3RydWN0dXJlRGVmaW5p",
+            "dGlvbhIqCgRuYW1lGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1Zh",
+            "bHVlEikKBHR5cGUYAiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50MzJWYWx1",
+            "ZRIPCgdpc19saXN0GAMgASgIEhMKC2lzX251bGxhYmxlGAQgASgIEiwKBmZv",
+            "cm1hdBgFIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZRIwCgth",
+            "Z2dyZWdhdGlvbhgGIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVl",
+            "EiwKBmxhYmVscxgHIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1",
+            "ZSIcCgtTZXJ2ZXJSZXBseRINCgVyZXBseRgBIAEoCTKRAQoJTWVzc2FnaW5n",
+            "EjwKDkdldEZ1bGxNZXNzYWdlEhQuTWVzc2FnZS5GdWxsTWVzc2FnZRoULk1l",
+            "c3NhZ2UuU2VydmVyUmVwbHkSRgoTR2V0T3B0aW1pemVkTWVzc2FnZRIZLk1l",
+            "c3NhZ2UuT3B0aW1pemVkTWVzc2FnZRoULk1lc3NhZ2UuU2VydmVyUmVwbHlC",
+            "DqoCC0dycGNTZXJ2aWNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.FullMessage), global::GrpcService.FullMessage.Parser, new[]{ "Header", "Rows" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.OptimizedMessage), global::GrpcService.OptimizedMessage.Parser, new[]{ "Header", "Rows" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.Row2), global::GrpcService.Row2.Parser, new[]{ "Values" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.Row3), global::GrpcService.Row3.Parser, new[]{ "Values" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.Value3), global::GrpcService.Value3.Parser, new[]{ "A", "B", "C", "D", "E" }, new[]{ "Item" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.StructureDefinition), global::GrpcService.StructureDefinition.Parser, new[]{ "Name", "Type", "IsList", "IsNullable", "Format", "Aggregation", "Labels" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.ServerReply), global::GrpcService.ServerReply.Parser, new[]{ "Reply" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.ClientRequest), global::GrpcService.ClientRequest.Parser, new[]{ "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcService.ServerReply), global::GrpcService.ServerReply.Parser, new[]{ "Reply" }, null, null, null, null)
           }));
     }
     #endregion
@@ -108,14 +109,14 @@ namespace GrpcService {
 
     /// <summary>Field number for the "rows" field.</summary>
     public const int RowsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::GrpcService.Row2> _repeated_rows_codec
-        = pb::FieldCodec.ForMessage(18, global::GrpcService.Row2.Parser);
-    private readonly pbc::RepeatedField<global::GrpcService.Row2> rows_ = new pbc::RepeatedField<global::GrpcService.Row2>();
+    private static readonly pb::FieldCodec<global::GrpcService.Row3> _repeated_rows_codec
+        = pb::FieldCodec.ForMessage(18, global::GrpcService.Row3.Parser);
+    private readonly pbc::RepeatedField<global::GrpcService.Row3> rows_ = new pbc::RepeatedField<global::GrpcService.Row3>();
     /// <summary>
     /// Optional field
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::GrpcService.Row2> Rows {
+    public pbc::RepeatedField<global::GrpcService.Row3> Rows {
       get { return rows_; }
     }
 
@@ -360,11 +361,11 @@ namespace GrpcService {
 
   }
 
-  public sealed partial class Row2 : pb::IMessage<Row2> {
-    private static readonly pb::MessageParser<Row2> _parser = new pb::MessageParser<Row2>(() => new Row2());
+  public sealed partial class Row3 : pb::IMessage<Row3> {
+    private static readonly pb::MessageParser<Row3> _parser = new pb::MessageParser<Row3>(() => new Row3());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Row2> Parser { get { return _parser; } }
+    public static pb::MessageParser<Row3> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -377,43 +378,40 @@ namespace GrpcService {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Row2() {
+    public Row3() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Row2(Row2 other) : this() {
+    public Row3(Row3 other) : this() {
       values_ = other.values_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Row2 Clone() {
-      return new Row2(this);
+    public Row3 Clone() {
+      return new Row3(this);
     }
 
     /// <summary>Field number for the "Values" field.</summary>
     public const int ValuesFieldNumber = 1;
-    private static readonly pb::FieldCodec<string> _repeated_values_codec
-        = pb::FieldCodec.ForString(10);
-    private readonly pbc::RepeatedField<string> values_ = new pbc::RepeatedField<string>();
-    /// <summary>
-    /// Optional field
-    /// </summary>
+    private static readonly pb::FieldCodec<global::GrpcService.Value3> _repeated_values_codec
+        = pb::FieldCodec.ForMessage(10, global::GrpcService.Value3.Parser);
+    private readonly pbc::RepeatedField<global::GrpcService.Value3> values_ = new pbc::RepeatedField<global::GrpcService.Value3>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<string> Values {
+    public pbc::RepeatedField<global::GrpcService.Value3> Values {
       get { return values_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as Row2);
+      return Equals(other as Row3);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Row2 other) {
+    public bool Equals(Row3 other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -458,7 +456,7 @@ namespace GrpcService {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Row2 other) {
+    public void MergeFrom(Row3 other) {
       if (other == null) {
         return;
       }
@@ -484,6 +482,287 @@ namespace GrpcService {
 
   }
 
+  public sealed partial class Value3 : pb::IMessage<Value3> {
+    private static readonly pb::MessageParser<Value3> _parser = new pb::MessageParser<Value3>(() => new Value3());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Value3> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::GrpcService.MessagesReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Value3() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Value3(Value3 other) : this() {
+      switch (other.ItemCase) {
+        case ItemOneofCase.A:
+          A = other.A;
+          break;
+        case ItemOneofCase.B:
+          B = other.B;
+          break;
+        case ItemOneofCase.C:
+          C = other.C;
+          break;
+        case ItemOneofCase.D:
+          D = other.D;
+          break;
+        case ItemOneofCase.E:
+          E = other.E;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Value3 Clone() {
+      return new Value3(this);
+    }
+
+    /// <summary>Field number for the "a" field.</summary>
+    public const int AFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool A {
+      get { return itemCase_ == ItemOneofCase.A ? (bool) item_ : false; }
+      set {
+        item_ = value;
+        itemCase_ = ItemOneofCase.A;
+      }
+    }
+
+    /// <summary>Field number for the "b" field.</summary>
+    public const int BFieldNumber = 2;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int B {
+      get { return itemCase_ == ItemOneofCase.B ? (int) item_ : 0; }
+      set {
+        item_ = value;
+        itemCase_ = ItemOneofCase.B;
+      }
+    }
+
+    /// <summary>Field number for the "c" field.</summary>
+    public const int CFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long C {
+      get { return itemCase_ == ItemOneofCase.C ? (long) item_ : 0L; }
+      set {
+        item_ = value;
+        itemCase_ = ItemOneofCase.C;
+      }
+    }
+
+    /// <summary>Field number for the "d" field.</summary>
+    public const int DFieldNumber = 4;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string D {
+      get { return itemCase_ == ItemOneofCase.D ? (string) item_ : ""; }
+      set {
+        item_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        itemCase_ = ItemOneofCase.D;
+      }
+    }
+
+    /// <summary>Field number for the "e" field.</summary>
+    public const int EFieldNumber = 5;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double E {
+      get { return itemCase_ == ItemOneofCase.E ? (double) item_ : 0D; }
+      set {
+        item_ = value;
+        itemCase_ = ItemOneofCase.E;
+      }
+    }
+
+    private object item_;
+    /// <summary>Enum of possible cases for the "item" oneof.</summary>
+    public enum ItemOneofCase {
+      None = 0,
+      A = 1,
+      B = 2,
+      C = 3,
+      D = 4,
+      E = 5,
+    }
+    private ItemOneofCase itemCase_ = ItemOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ItemOneofCase ItemCase {
+      get { return itemCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearItem() {
+      itemCase_ = ItemOneofCase.None;
+      item_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Value3);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Value3 other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (A != other.A) return false;
+      if (B != other.B) return false;
+      if (C != other.C) return false;
+      if (D != other.D) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(E, other.E)) return false;
+      if (ItemCase != other.ItemCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (itemCase_ == ItemOneofCase.A) hash ^= A.GetHashCode();
+      if (itemCase_ == ItemOneofCase.B) hash ^= B.GetHashCode();
+      if (itemCase_ == ItemOneofCase.C) hash ^= C.GetHashCode();
+      if (itemCase_ == ItemOneofCase.D) hash ^= D.GetHashCode();
+      if (itemCase_ == ItemOneofCase.E) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(E);
+      hash ^= (int) itemCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (itemCase_ == ItemOneofCase.A) {
+        output.WriteRawTag(8);
+        output.WriteBool(A);
+      }
+      if (itemCase_ == ItemOneofCase.B) {
+        output.WriteRawTag(16);
+        output.WriteInt32(B);
+      }
+      if (itemCase_ == ItemOneofCase.C) {
+        output.WriteRawTag(24);
+        output.WriteInt64(C);
+      }
+      if (itemCase_ == ItemOneofCase.D) {
+        output.WriteRawTag(34);
+        output.WriteString(D);
+      }
+      if (itemCase_ == ItemOneofCase.E) {
+        output.WriteRawTag(41);
+        output.WriteDouble(E);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (itemCase_ == ItemOneofCase.A) {
+        size += 1 + 1;
+      }
+      if (itemCase_ == ItemOneofCase.B) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(B);
+      }
+      if (itemCase_ == ItemOneofCase.C) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(C);
+      }
+      if (itemCase_ == ItemOneofCase.D) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(D);
+      }
+      if (itemCase_ == ItemOneofCase.E) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Value3 other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.ItemCase) {
+        case ItemOneofCase.A:
+          A = other.A;
+          break;
+        case ItemOneofCase.B:
+          B = other.B;
+          break;
+        case ItemOneofCase.C:
+          C = other.C;
+          break;
+        case ItemOneofCase.D:
+          D = other.D;
+          break;
+        case ItemOneofCase.E:
+          E = other.E;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            A = input.ReadBool();
+            break;
+          }
+          case 16: {
+            B = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            C = input.ReadInt64();
+            break;
+          }
+          case 34: {
+            D = input.ReadString();
+            break;
+          }
+          case 41: {
+            E = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class StructureDefinition : pb::IMessage<StructureDefinition> {
     private static readonly pb::MessageParser<StructureDefinition> _parser = new pb::MessageParser<StructureDefinition>(() => new StructureDefinition());
     private pb::UnknownFieldSet _unknownFields;
@@ -492,7 +771,7 @@ namespace GrpcService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcService.MessagesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::GrpcService.MessagesReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -840,7 +1119,7 @@ namespace GrpcService {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcService.MessagesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::GrpcService.MessagesReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -953,135 +1232,6 @@ namespace GrpcService {
             break;
           case 10: {
             Reply = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class ClientRequest : pb::IMessage<ClientRequest> {
-    private static readonly pb::MessageParser<ClientRequest> _parser = new pb::MessageParser<ClientRequest>(() => new ClientRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ClientRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcService.MessagesReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ClientRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ClientRequest(ClientRequest other) : this() {
-      message_ = other.message_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ClientRequest Clone() {
-      return new ClientRequest(this);
-    }
-
-    /// <summary>Field number for the "message" field.</summary>
-    public const int MessageFieldNumber = 1;
-    private pb::ByteString message_ = pb::ByteString.Empty;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pb::ByteString Message {
-      get { return message_; }
-      set {
-        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as ClientRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ClientRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Message != other.Message) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Message.Length != 0) hash ^= Message.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (Message.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteBytes(Message);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Message.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Message);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ClientRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Message.Length != 0) {
-        Message = other.Message;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Message = input.ReadBytes();
             break;
           }
         }

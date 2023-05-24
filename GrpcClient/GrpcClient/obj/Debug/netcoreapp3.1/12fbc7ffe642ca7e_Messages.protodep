@@ -1,0 +1,4 @@
+obj\Debug\netcoreapp3.1\Protos/Messages.cs \
+obj\Debug\netcoreapp3.1\Protos/MessagesGrpc.cs: C:/Users/Arham/.nuget/packages/grpc.tools/2.54.0/build/native/include/google/protobuf/wrappers.proto\
+ C:/Users/Arham/.nuget/packages/grpc.tools/2.54.0/build/native/include/google/protobuf/any.proto\
+ Protos/Messages.proto

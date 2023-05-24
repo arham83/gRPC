@@ -31,11 +31,10 @@ namespace GrpcClient.BenchMarkIT
 
         public BenchMarkUsingProtoBuf()
         {
-
-            SOM = D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\smallOptimized.json");
-            BOM = D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\bigOptimized.json");
-            SFM = D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\smallFull.json");
-            BFM = D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\bigFull.json");
+            SOM = D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallOptimized.json");
+            BOM = D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigOptimized.json");
+            SFM = D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallFull.json");
+            BFM = D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigFull.json");
 
             pbBytes1 = SOM.ToByteArray();
             pbBytes2 = BOM.ToByteArray();
@@ -60,14 +59,13 @@ namespace GrpcClient.BenchMarkIT
         [Benchmark]
         public void InitOMFromDTO_SOM()
         {
-            D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\smallOptimized.json");
+            D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallOptimized.json");
         }
 
         [Benchmark]
         public void TransmissionTime_ProtoBuf_SOM()
         {
-            ByteString myByteString = ByteString.CopyFrom(pbBytes1);
-            var reply = client.GetOptimizedMessage(new ClientRequest { Message = myByteString });
+            var reply = client.GetOptimizedMessage(SOM);
         }
 
         [Benchmark]
@@ -86,14 +84,13 @@ namespace GrpcClient.BenchMarkIT
         [Benchmark]
         public void InitOMFromDTO_BOM()
         {
-            D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\bigOptimized.json");
+            D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigOptimized.json");
         }
 
         [Benchmark]
         public void TransmissionTime_ProtoBuf_BOM()
         {
-            ByteString myByteString = ByteString.CopyFrom(pbBytes2);
-            var reply = client.GetOptimizedMessage(new ClientRequest { Message = myByteString });
+            var reply = client.GetOptimizedMessage(BOM);
         }
 
         [Benchmark]
@@ -110,13 +107,12 @@ namespace GrpcClient.BenchMarkIT
         [Benchmark]
         public void InitOMFromDTO_SFM()
         {
-            D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\smallFull.json");
+            D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallFull.json");
         }
         [Benchmark]
         public void TransmissionTime_ProtoBuf_SFM()
         {
-            ByteString myByteString = ByteString.CopyFrom(pbBytes3);
-            var reply = client.GetFullMessage(new ClientRequest { Message = myByteString });
+            var reply = client.GetFullMessage(SFM);
         }
 
         [Benchmark]
@@ -135,14 +131,13 @@ namespace GrpcClient.BenchMarkIT
         [Benchmark]
         public void InitOMFromDTO_BFM()
         {
-            D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project -V2\GrpcClient\GrpcClient\SampleMessages\bigFull.json");
+            D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigFull.json");
         }
 
         [Benchmark]
         public void TransmissionTime_ProtoBuf_BFM()
         {
-            ByteString myByteString = ByteString.CopyFrom(pbBytes4);
-            var reply = client.GetFullMessage(new ClientRequest { Message = myByteString });
+            var reply = client.GetFullMessage(BFM);
         }
 
         [Benchmark]

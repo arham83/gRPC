@@ -10,23 +10,33 @@ option csharp_namespace = "GrpcService";
 package Message;
 
 service Messaging {
-  rpc GetFullMessage(ClientRequest) returns (ServerReply);
-  rpc GetOptimizedMessage(ClientRequest) returns (ServerReply);
+  rpc GetFullMessage(FullMessage) returns (ServerReply);
+  rpc GetOptimizedMessage(OptimizedMessage) returns (ServerReply);
 }
 
 message FullMessage {
   repeated StructureDefinition header = 1; // Optional field
-  repeated Row2 rows = 2; // Optional field
+  repeated Row3 rows = 2; // Optional field
 }
 
 message OptimizedMessage {
   repeated StructureDefinition header = 1;  // Optional field
   string rows = 2; // Optional field
 }
-message Row2 {
-	repeated google.protobuf.StringValue Values = 1;
+
+message Row3 {
+	repeated Value3 Values = 1;
 }
 
+message Value3 {
+	oneof item {
+		bool a = 1;
+		int32 b = 2;
+		int64 c = 3;
+		string d = 4;
+		double e = 5;
+	}
+}
 message StructureDefinition {
   google.protobuf.StringValue name = 1; // Optional field
   google.protobuf.Int32Value type = 2; // Optional field
@@ -39,8 +49,4 @@ message StructureDefinition {
 
 message ServerReply {
   string reply = 1;
-}
-
-message ClientRequest {
-  bytes message = 1;
 }

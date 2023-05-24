@@ -12,21 +12,22 @@ namespace GrpcService {
   {
     static readonly string __ServiceName = "Message.Messaging";
 
-    static readonly grpc::Marshaller<global::GrpcService.ClientRequest> __Marshaller_Message_ClientRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService.ClientRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcService.FullMessage> __Marshaller_Message_FullMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService.FullMessage.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::GrpcService.ServerReply> __Marshaller_Message_ServerReply = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService.ServerReply.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::GrpcService.OptimizedMessage> __Marshaller_Message_OptimizedMessage = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::GrpcService.OptimizedMessage.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::GrpcService.ClientRequest, global::GrpcService.ServerReply> __Method_GetFullMessage = new grpc::Method<global::GrpcService.ClientRequest, global::GrpcService.ServerReply>(
+    static readonly grpc::Method<global::GrpcService.FullMessage, global::GrpcService.ServerReply> __Method_GetFullMessage = new grpc::Method<global::GrpcService.FullMessage, global::GrpcService.ServerReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetFullMessage",
-        __Marshaller_Message_ClientRequest,
+        __Marshaller_Message_FullMessage,
         __Marshaller_Message_ServerReply);
 
-    static readonly grpc::Method<global::GrpcService.ClientRequest, global::GrpcService.ServerReply> __Method_GetOptimizedMessage = new grpc::Method<global::GrpcService.ClientRequest, global::GrpcService.ServerReply>(
+    static readonly grpc::Method<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply> __Method_GetOptimizedMessage = new grpc::Method<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetOptimizedMessage",
-        __Marshaller_Message_ClientRequest,
+        __Marshaller_Message_OptimizedMessage,
         __Marshaller_Message_ServerReply);
 
     /// <summary>Service descriptor</summary>
@@ -39,12 +40,12 @@ namespace GrpcService {
     [grpc::BindServiceMethod(typeof(Messaging), "BindService")]
     public abstract partial class MessagingBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> GetFullMessage(global::GrpcService.ClientRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> GetFullMessage(global::GrpcService.FullMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
-      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> GetOptimizedMessage(global::GrpcService.ClientRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> GetOptimizedMessage(global::GrpcService.OptimizedMessage request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -66,8 +67,8 @@ namespace GrpcService {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, MessagingBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetFullMessage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.ClientRequest, global::GrpcService.ServerReply>(serviceImpl.GetFullMessage));
-      serviceBinder.AddMethod(__Method_GetOptimizedMessage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.ClientRequest, global::GrpcService.ServerReply>(serviceImpl.GetOptimizedMessage));
+      serviceBinder.AddMethod(__Method_GetFullMessage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.FullMessage, global::GrpcService.ServerReply>(serviceImpl.GetFullMessage));
+      serviceBinder.AddMethod(__Method_GetOptimizedMessage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply>(serviceImpl.GetOptimizedMessage));
     }
 
   }

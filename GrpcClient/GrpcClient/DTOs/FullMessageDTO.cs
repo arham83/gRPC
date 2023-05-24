@@ -7,6 +7,6 @@ namespace GrpcClient.DTOs
     class FullMessageDTO
     {
         public List<StructureDefinitionDTO> Header { get; set; }
-        public List<List<string>> Rows { get; set; }
+        public List<List<object>> Rows { get; set; }
     }
 }
