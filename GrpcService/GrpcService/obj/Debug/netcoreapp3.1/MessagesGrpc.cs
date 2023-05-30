@@ -30,6 +30,34 @@ namespace GrpcService {
         __Marshaller_Message_OptimizedMessage,
         __Marshaller_Message_ServerReply);
 
+    static readonly grpc::Method<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply> __Method_TestSOM = new grpc::Method<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TestSOM",
+        __Marshaller_Message_OptimizedMessage,
+        __Marshaller_Message_ServerReply);
+
+    static readonly grpc::Method<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply> __Method_TestBOM = new grpc::Method<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TestBOM",
+        __Marshaller_Message_OptimizedMessage,
+        __Marshaller_Message_ServerReply);
+
+    static readonly grpc::Method<global::GrpcService.FullMessage, global::GrpcService.ServerReply> __Method_TestSFM = new grpc::Method<global::GrpcService.FullMessage, global::GrpcService.ServerReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TestSFM",
+        __Marshaller_Message_FullMessage,
+        __Marshaller_Message_ServerReply);
+
+    static readonly grpc::Method<global::GrpcService.FullMessage, global::GrpcService.ServerReply> __Method_TestBFM = new grpc::Method<global::GrpcService.FullMessage, global::GrpcService.ServerReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TestBFM",
+        __Marshaller_Message_FullMessage,
+        __Marshaller_Message_ServerReply);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -50,6 +78,26 @@ namespace GrpcService {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> TestSOM(global::GrpcService.OptimizedMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> TestBOM(global::GrpcService.OptimizedMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> TestSFM(global::GrpcService.FullMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::GrpcService.ServerReply> TestBFM(global::GrpcService.FullMessage request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
@@ -58,7 +106,11 @@ namespace GrpcService {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetFullMessage, serviceImpl.GetFullMessage)
-          .AddMethod(__Method_GetOptimizedMessage, serviceImpl.GetOptimizedMessage).Build();
+          .AddMethod(__Method_GetOptimizedMessage, serviceImpl.GetOptimizedMessage)
+          .AddMethod(__Method_TestSOM, serviceImpl.TestSOM)
+          .AddMethod(__Method_TestBOM, serviceImpl.TestBOM)
+          .AddMethod(__Method_TestSFM, serviceImpl.TestSFM)
+          .AddMethod(__Method_TestBFM, serviceImpl.TestBFM).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -69,6 +121,10 @@ namespace GrpcService {
     {
       serviceBinder.AddMethod(__Method_GetFullMessage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.FullMessage, global::GrpcService.ServerReply>(serviceImpl.GetFullMessage));
       serviceBinder.AddMethod(__Method_GetOptimizedMessage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply>(serviceImpl.GetOptimizedMessage));
+      serviceBinder.AddMethod(__Method_TestSOM, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply>(serviceImpl.TestSOM));
+      serviceBinder.AddMethod(__Method_TestBOM, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.OptimizedMessage, global::GrpcService.ServerReply>(serviceImpl.TestBOM));
+      serviceBinder.AddMethod(__Method_TestSFM, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.FullMessage, global::GrpcService.ServerReply>(serviceImpl.TestSFM));
+      serviceBinder.AddMethod(__Method_TestBFM, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::GrpcService.FullMessage, global::GrpcService.ServerReply>(serviceImpl.TestBFM));
     }
 
   }

@@ -12,6 +12,10 @@ package Message;
 service Messaging {
   rpc GetFullMessage(FullMessage) returns (ServerReply);
   rpc GetOptimizedMessage(OptimizedMessage) returns (ServerReply);
+  rpc TestSOM(OptimizedMessage) returns (ServerReply);
+  rpc TestBOM(OptimizedMessage) returns (ServerReply);
+  rpc TestSFM(FullMessage) returns (ServerReply);
+  rpc TestBFM(FullMessage) returns (ServerReply);
 }
 
 message FullMessage {

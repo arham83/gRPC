@@ -8,6 +8,7 @@ using BenchmarkDotNet.Attributes;
 using Google.Protobuf;
 using GrpcClient.DTOs;
 using GrpcClient.Mapper;
+using GrpcClient.Miscellaneous;
 
 namespace GrpcClient.BenchMarkIT
 {
@@ -15,31 +16,19 @@ namespace GrpcClient.BenchMarkIT
     {
 
         private readonly OptimizedMessage SOM;
-        private readonly Byte[] pbBytes1;
-
         private readonly OptimizedMessage BOM;
-        private readonly Byte[] pbBytes2;
-
         private readonly FullMessage SFM;
-        private readonly Byte[] pbBytes3;
-
         private readonly FullMessage BFM;
-        private readonly Byte[] pbBytes4;
 
         private readonly GrpcChannel channel;
         private readonly Messaging.MessagingClient client;
 
         public BenchMarkUsingProtoBuf()
         {
-            SOM = D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallOptimized.json");
-            BOM = D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigOptimized.json");
-            SFM = D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallFull.json");
-            BFM = D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigFull.json");
-
-            pbBytes1 = SOM.ToByteArray();
-            pbBytes2 = BOM.ToByteArray();
-            pbBytes3 = SFM.ToByteArray();
-            pbBytes4 = BFM.ToByteArray();
+            SOM = D2PMapper.InitOMFromDTO(Misc.GetPath(@"SampleMessages\smallOptimized.json"));
+            BOM = D2PMapper.InitOMFromDTO(Misc.GetPath(@"SampleMessages\bigOptimized.json"));
+            SFM = D2PMapper.InitFMFromDTO(Misc.GetPath(@"SampleMessages\smallFull.json"));
+            BFM = D2PMapper.InitFMFromDTO(Misc.GetPath(@"SampleMessages\bigFull.json"));
             channel = GrpcChannel.ForAddress("https://localhost:5001",
                 new GrpcChannelOptions
                 {
@@ -51,40 +40,9 @@ namespace GrpcClient.BenchMarkIT
 
 
         [Benchmark]
-        public void ProtoBufSerialization_SOM()
-        {
-            SOM.ToByteArray();
-        }
-
-        [Benchmark]
-        public void InitOMFromDTO_SOM()
-        {
-            D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallOptimized.json");
-        }
-
-        [Benchmark]
         public void TransmissionTime_ProtoBuf_SOM()
         {
             var reply = client.GetOptimizedMessage(SOM);
-        }
-
-        [Benchmark]
-
-        public void ProtoBufDeserialization_SOM()
-        {
-            OptimizedMessage.Parser.ParseFrom(pbBytes1);
-        }
-
-        [Benchmark]
-        public void ProtoBufSerialization_BOM()
-        {
-            BOM.ToByteArray();
-        }
-
-        [Benchmark]
-        public void InitOMFromDTO_BOM()
-        {
-            D2PMapper.InitOMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigOptimized.json");
         }
 
         [Benchmark]
@@ -94,56 +52,15 @@ namespace GrpcClient.BenchMarkIT
         }
 
         [Benchmark]
-        public void ProtoBufDeserialization_BOM()
-        {
-            OptimizedMessage.Parser.ParseFrom(pbBytes2);
-        }
-
-        [Benchmark]
-        public void ProtoBufSerialization_SFM()
-        {
-            SFM.ToByteArray();
-        }
-        [Benchmark]
-        public void InitOMFromDTO_SFM()
-        {
-            D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\smallFull.json");
-        }
-        [Benchmark]
         public void TransmissionTime_ProtoBuf_SFM()
         {
             var reply = client.GetFullMessage(SFM);
         }
 
         [Benchmark]
-
-        public void ProtoBufDeserialization_SFM()
-        {
-            FullMessage.Parser.ParseFrom(pbBytes3);
-        }
-
-        [Benchmark]
-        public void ProtoBufSerialization_BFM()
-        {
-            BFM.ToByteArray();
-        }
-
-        [Benchmark]
-        public void InitOMFromDTO_BFM()
-        {
-            D2PMapper.InitFMFromDTO(@"D:\LayerOne\Project - gRPC\Project-V2-Working\GrpcClient\GrpcClient\SampleMessages\bigFull.json");
-        }
-
-        [Benchmark]
         public void TransmissionTime_ProtoBuf_BFM()
         {
             var reply = client.GetFullMessage(BFM);
-        }
-
-        [Benchmark]
-        public void ProtoBufDeserialization_BFM()
-        {
-            FullMessage.Parser.ParseFrom(pbBytes4);
         }
     }
 }
